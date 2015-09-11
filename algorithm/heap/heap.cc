@@ -9,7 +9,7 @@ template <class Iter>
 void push_heap(Iter first, Iter last) {
     --last;
     auto prev = last;
-    prev = first + (std::distance(first, last)) / 2;
+    prev = first + (last - first) / 2;
     while (last != first && *prev < *last) {
         std::iter_swap(prev, last);
         last = prev;
