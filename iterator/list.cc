@@ -47,7 +47,7 @@ class LinkedList {
 
             iterator operator++(int) {
                 iterator tmp(*this);
-                ++tmp;
+                ++*this;
                 return tmp;
             }
 
