@@ -27,4 +27,3 @@ struct iterator_traits<const T*> {
     using reference = const T&;
     using iterator_category = std::random_access_iterator_tag;
 };
-
